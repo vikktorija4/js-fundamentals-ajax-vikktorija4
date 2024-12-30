@@ -12,6 +12,6 @@ fetch("https://jsonplaceholder.typicode.com/users")
  .then((response) => response.json())
 .then((users) => {
   users.forEach((user) => {
-    userList.insertAdjacentHTML("beforeend", '<li>${user.username}</li>}
+    userList.insertAdjacentHTML("beforeend", `<li>${user.username}</li>`}
                                 })
 })
